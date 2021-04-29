@@ -10,7 +10,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: ${POSTGRES_USERNAME:postgres}
     password: ${POSTGRES_PASSWORD:password}
-    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/airline_tickets_system}
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/airline_tickets_system}
   jpa:
     hibernate:
       ddl-auto: update
