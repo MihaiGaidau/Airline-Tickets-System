@@ -8,9 +8,9 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: ${POSTGRES_USERNAME:postgres}
-    password: ${POSTGRES_PASSWORD:password}
-    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/airline_tickets_system}
+    username: postgres
+    password: password
+    url: postgres://obgbuqgvnhphnd:539bb05b6b483c8b3a4d4eb7286f64df2ed33b447c8247c7ef8317640944c098@ec2-176-34-105-15.eu-west-1.compute.amazonaws.com:5432/d8d3be3ggg72ie
   jpa:
     hibernate:
       ddl-auto: update
@@ -34,11 +34,11 @@ spring:
             enable: true
   #RabbitMQ config
   rabbitmq:
-    host: ${RABBIT_MQ_HOST:localhost}
-    virtual-host: ${RABBIT_MQ_VIRTUAL_HOST:}
-    port: ${RABBIT_MQ_PORT:5672}
-    username: ${RABBIT_MQ_USERNAME:guest}
-    password: ${RABBIT_MQ_PASSWORD:guest}
+    host: stingray.rmq.cloudamqp.com
+    virtual-host: ajmyskak
+    port: 5672
+    username: ajmyskak
+    password: tuKjWGB9JrrHyoYHAs_2m9p2wkuSrpdk
 
 jwt:
   secret-key: 6A576E5A7234753778214125442A472D4B614E645267556B58703273357638792F423F4528482B4D6251655368566D597133743677397A24432646294A404E63
